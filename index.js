@@ -19,3 +19,21 @@ if(hacker2Length > hacker1Length){
 }
 
 // Iteration 3: Loops
+let space = ' ';
+const hacker1Capital = hacker1.toUpperCase();
+let hackernameWithSpaces = ' ';
+// console.log(hacker1Capital);
+for (let i = 0; i < hacker1Capital.length; i++) {
+  const check = hacker1Capital[i] + space;
+  hackernameWithSpaces += check;
+}
+console.log(hackernameWithSpaces);
+
+let hacker2Reversed = ' ';
+
+for (let i = hacker2.length - 1; i >= 0; i--) {
+  const char = hacker2[i];
+  hacker2Reversed += char;
+}
+
+console.log(hacker2Reversed);
